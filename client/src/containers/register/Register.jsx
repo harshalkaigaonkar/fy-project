@@ -4,14 +4,11 @@ import human from './../../assets/human.svg';
 import { CommonInput, CtaButton, WebcamCapture } from '../../components';
 import './register.css';
 
-const inputField = [ 'Email ID', 'Full Name', 'Password' ];
+const inputField = ['Email ID', 'Full Name', 'Password'];
 
 const Register = () => {
 	return (
 		<div className="user-register">
-			<div className="logo">
-				<img src={logo} alt="aankh-logo" />
-			</div>
 			<div className="register-form">
 				<h1 className="title-heading">Register</h1>
 				<div className="input-fields">

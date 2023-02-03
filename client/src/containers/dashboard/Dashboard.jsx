@@ -24,9 +24,6 @@ const mockTests = [
 const Dashboard = () => {
 	return (
 		<div className="section-type admin-dashboard">
-			<div className="logo">
-				<img src={logo} alt="aankh-logo" />
-			</div>
 
 			<h1 className="title-heading">Admin Dashbaord</h1>
 

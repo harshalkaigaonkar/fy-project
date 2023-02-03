@@ -33,10 +33,6 @@ const Status = ({
 }) => {
 	return (
 		<div className="status-dashboard">
-			<div className="logo">
-				<img src={logo} alt="aankh-logo" />
-			</div>
-
 			<h1 className="title-heading">Test Dashboard</h1>
 
 			<div className="test-details">

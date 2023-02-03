@@ -16,9 +16,6 @@ const inputField = [
 const Create = () => {
 	return (
 		<div className="client-create">
-			<div className="logo">
-				<img src={logo} alt="aankh-logo" />
-			</div>
 			<div className="create-form">
 				<h1 className="title-heading">Create a test</h1>
 				<div className="input-fields">
