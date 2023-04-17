@@ -3,9 +3,10 @@ import './navbar.css';
 
 const NavLinks = () => (
 	<React.Fragment>
-		<p>
+		<div style={{ display: 'flex', gap: '10px' }}>
 			<a href="/login">Login</a>
-		</p>
+			<p style={{ maginLeft: '8px' }}><a href="/dashboard">Dashboard</a></p>
+		</div>
 	</React.Fragment>
 );
 

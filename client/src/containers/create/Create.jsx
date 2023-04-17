@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './../../assets/logofont.svg';
+import { Link } from 'react-router-dom'
 import { CommonInput, CtaButton } from '../../components';
 import './create.css';
 
@@ -24,7 +24,9 @@ const Create = () => {
 					))}
 				</div>
 
-				<CtaButton text="Create" />
+				<Link to='/'>
+					<CtaButton text="Create" />
+				</Link>
 			</div>
 		</div>
 	);

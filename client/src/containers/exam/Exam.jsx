@@ -4,11 +4,11 @@ import devtools from './../../../node_modules/devtools-detect/index.js';
 import './exam.css';
 
 const Exam = ({
-	examName = 'Periodic Test - DBMS: 20th January, 2022',
-	studentID = '1902112',
-	studentEmail = 'tusharnankani3@gmail.com',
+	examName = 'Mock Test',
+	studentID = '123',
+	studentEmail = 'sah.kat@gmail.com',
 	duration = 60,
-	formLink = 'https://docs.google.com/forms/d/e/1FAIpQLScGieRkiR-718h3RwfOmLBRxLd8c8rySsYB8L4yE00rZc95CA/viewform'
+	formLink = 'https://forms.gle/NgForGqTbNQbxcBK6'
 }) => {
 	function captureCheck() {
 		// defualt hidden
@@ -24,14 +24,14 @@ const Exam = ({
 			// 	'Your exam will terminate. Please go to full screen mode.'
 			// );
 			// console.log('Not full screen');
-			setIsFullScreen(false);
+			// setIsFullScreen(false);
 		}
 
 		if (!isFullScreen) {
-			setWarningCnt(warningCnt + 1);
-			setShowMessage(
-				'Your exam will terminate. Please go to full screen mode.'
-			);
+			// setWarningCnt(warningCnt + 1);
+			// setShowMessage(
+			// 	'Your exam will terminate. Please go to full screen mode.'
+			// );
 			disableForm();
 		} else {
 			enableForm();
@@ -64,10 +64,10 @@ const Exam = ({
 		}
 	}
 
-	const [ warningCnt, setWarningCnt ] = useState(0);
-	const [ isDevToolsOpen, setIsDevToolsOpen ] = useState(false);
-	const [ isFullScreen, setIsFullScreen ] = useState(true);
-	const [ showMessage, setShowMessage ] = useState('');
+	const [warningCnt, setWarningCnt] = useState(0);
+	const [isDevToolsOpen, setIsDevToolsOpen] = useState(false);
+	const [isFullScreen, setIsFullScreen] = useState(true);
+	const [showMessage, setShowMessage] = useState('');
 
 	// TO EMBED
 	formLink += '?embedded=true';
@@ -77,12 +77,12 @@ const Exam = ({
 		// console.log('Is DevTools open:', event.detail.isOpen);
 		// console.log('DevTools orientation:', event.detail.orientation);
 		if (event.detail.isOpen) {
-			setWarningCnt(warningCnt + 1);
-			setIsDevToolsOpen(true);
+			// setWarningCnt(warningCnt + 1);
+			// setIsDevToolsOpen(true);
 		}
 
 		if (!isDevToolsOpen) {
-			setShowMessage('Your exam will terminate. Please close devtools.');
+			// setShowMessage('Your exam will terminate. Please close devtools.');
 			disableForm();
 		} else {
 			enableForm();
@@ -92,10 +92,10 @@ const Exam = ({
 	});
 
 	// Full screen check
-	setInterval(check, 10000);
+	// setInterval(check, 10000);
 
-	// Image Capture
-	setInterval(captureCheck, 20000);
+	// // Image Capture
+	// setInterval(captureCheck, 20000);
 
 	return (
 		<div className="exam-container">

@@ -4,12 +4,8 @@ import infinite from './../../assets/infinite.svg';
 import './landing.css';
 
 const featureList = [
-	'Face Verification',
 	'Multiple People Detection',
-	'Voice Detection',
-	'Devtools Check',
 	'Full Screen Check',
-	'Multiple Tabs Check'
 ];
 
 const Landing = () => {
@@ -27,9 +23,7 @@ const Landing = () => {
 					</div>
 
 					<p className="desc">
-						A straightforward framework built for online proctoring
-						to create online tests within minutes,{' '}
-						<i>effortlessly</i>.
+						Create exams , online monitoring , share google forms
 					</p>
 				</div>
 
@@ -92,11 +86,7 @@ const Landing = () => {
 					</div>
 
 					<div className="mid-cta final-cta">
-						<p className="phew">
-							And it’s <b>free</b>.
-							<br />
-							What are you waiting for?
-						</p>
+
 						<a href="/create">
 							<CtaButton text="Create a test" />
 						</a>

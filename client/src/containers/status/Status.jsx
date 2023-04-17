@@ -27,9 +27,9 @@ const mockList = [
 ];
 
 const Status = ({
-	time = '20/01/2022 17:30',
-	name = 'Periodic Test - DBMS',
-	link = 'asd-qwvs-dfs'
+	time = '3/02/2023',
+	name = 'Mock Test',
+	link = ''
 }) => {
 	return (
 		<div className="status-dashboard">

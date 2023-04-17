@@ -5,19 +5,19 @@ import './dashboard.css';
 
 const mockTests = [
 	{
-		name: 'Periodic Test - DBMS',
+		name: 'OCN',
 		link: 'asd-qwvs-dfs',
-		time: '20/01/2022 17:30'
+		time: '3/02/2023'
 	},
 	{
-		name: 'Periodic Test - OSLT',
+		name: 'ARVR',
 		link: 'pbl-dfse-phd',
-		time: '21/01/2022 17:30'
+		time: '4/02/2023'
 	},
 	{
-		name: 'Periodic Test - SPCC',
+		name: 'EM',
 		link: 'fhh-dfgg-aee',
-		time: '22/01/2022 17:30'
+		time: '6/01/2023'
 	}
 ];
 

@@ -10,8 +10,9 @@ import cv2
 import numpy as np
 from mark_detector import MarkDetector
 from pose_estimator import PoseEstimator
-
+from flask_cors import CORS, cross_origin
 app = Flask(__name__)
+cors = CORS(app)
 
 multiple_people_detector = hub.load("https://tfhub.dev/tensorflow/efficientdet/d0/1")
 
@@ -49,9 +50,9 @@ def readb64(uri):
 
 @app.route('/predict_pose', methods = ['GET', 'POST']) 
 def predict_pose() : 
+    print('request coming')
     data = request.get_json(force = True) 
     image = r'{}'.format(data['img'])
-    print(type(image), image)
     image= readb64(image)
     plt.imshow(image)
     # plt.show()
@@ -142,7 +143,7 @@ def save() :
     plt.imsave(image, path)
     return jsonify({'path' : path})
 
-
+print('its here')
 if __name__ == '__main__':
     # app.run(debug=True)
     app.run(host='0.0.0.0',port=8080)
